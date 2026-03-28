@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel Finder</title>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Find Hostels Near Campus</h1>
+
+
+<button onclick="requestAccess()">Request Access</button>
+
+<button onclick="createCode()" id="adminBtn">Generate Code</button>  
+  
+
+
+<!-- SEARCH + FILTER -->
+  <div class="controls">
+    <input 
+      type="text" 
+      placeholder="Search hostels..." 
+      id="searchInput"
+    >
+
+    <select id="schoolFilter">
+      <option value="ALL">All Schools</option>
+      <option value="MUBAS">MUBAS</option>
+      <option value="CHANCO">CHANCO</option>
+    </select>
+  </div>
+
+  <!-- HOSTELS WILL LOAD HERE -->
+  <div id="hostel-list"></div>
+
+  <!-- JS (IMPORTANT: at the bottom) -->
+<script type="module" src="script.js"></script>
+
+
+  
+</body>
+</html>
